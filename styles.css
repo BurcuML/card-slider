@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-optical-sizing: auto;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e7e7;
+}
+section .card-slider .card-slider__item__img{
+  width: 220px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 5px;
+  background: #5a94fa;
+}
+
+section .card-slider .card-slider__item__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card-container{
+  margin: 20px 0;
+  border-radius: 21px;
+  position: relative;
+}
+
+.card-slider__item::before{
+  content: "";
+  position: absolute;
+  background: #5a94fa;
+  height: 30%;
+  width: 100%;
+  z-index: -1;
+}
+.card-container .card-slider__item{
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.card-container h3{
+  font-size: 33px;
+  font-weight: 600;
+  margin: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container p{
+  font-size: 15px;
+  font-weight: 400;
+  padding: 20px;
+}
+.icons{
+  display: flex;
+  padding: 20px;
+}
+.icon{
+  color: #5a94fa;
+  margin: 15px 20px 0 15px;
+  height: 40px;
+  width: 40px;
+  border: 3px solid #5a94fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 0 #5a94fa;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.icon:hover{
+  box-shadow: inset 100px 0 0 0 #5a94fa;
+  color: white;
+}
+.swiper{
+  width: 950px;
+}
